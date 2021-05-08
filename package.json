@@ -1,0 +1,30 @@
+{
+  "name": "ether-eye-backend",
+  "version": "1.0.0",
+  "repository": "https://github.com/paulvaden/EthDev.git",
+  "description": "backend for the ether-eye Ethereum analysis application",
+  "main": "build/index.js",
+  "scripts": {
+    "compile": "tsc src/*.ts",
+    "test": "mocha -r ts-node/register src/test/*.ts"
+  },
+  "author": "EthDev Technologies",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.17",
+    "@types/mocha": "^8.2.2",
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "ts-node": "^9.1.1"
+  },
+  "dependencies": {
+    "@ethersproject/address": "^5.1.0",
+    "@ethersproject/contracts": "^5.1.1",
+    "@ethersproject/providers": "^5.1.2",
+    "@ethersproject/solidity": "^5.1.0",
+    "@uniswap/sdk": "^3.0.3",
+    "abi-decoder": "^2.4.0",
+    "aws-sdk": "^2.886.0",
+    "web3": "^1.3.5"
+  }
+}
